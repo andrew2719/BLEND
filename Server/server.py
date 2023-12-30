@@ -10,6 +10,8 @@ async def handle_client(reader, writer):
 
     writer.close()
 
+async def ajay():
+    pass
 async def main():
     port = 8881  # Change this for each server
     server = await asyncio.start_server(handle_client, '127.0.0.1', port)
