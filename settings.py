@@ -3,13 +3,9 @@ import psutil
 
 DIR_PATH = os.path.dirname(os.path.realpath(__file__))
 
-RECEIVED_FILES = os.path.join(DIR_PATH, 'received_files')
+COMMONS = os.path.join(DIR_PATH, 'Commons')
 
-RESOURCES_PATH = os.path.join(DIR_PATH,'Resources')
-
-APP_LOG = os.path.join(RESOURCES_PATH, 'app.log')
-
-CLIENT_LOG = os.path.join(DIR_PATH,'Client','client.log')
+LOGS = os.path.join(COMMONS, 'logs')
 
 OS_TYPE = os.name
 

@@ -17,6 +17,7 @@ class SqliteDB:
         # create server table
         await self.create_table("CREATE TABLE IF NOT EXISTS servers (server_ip TEXT, hash TEXT)")
         # file table
+        await self.create_table("CREATE TABLE IF NOT EXISTS files (file_name TEXT, extension TEXT, hash TEXT, size INT, data BLOB)")
 
 
 
@@ -37,3 +38,5 @@ class Clinet_operations(SqliteDB):
         extension = kwargs.get("extension")
         hash = kwargs.get("hash")
         size = kwargs.get("size")
+        data = kwargs.get("data")
+
