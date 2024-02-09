@@ -1,6 +1,8 @@
 import os
 import psutil
 
+SERVER_PORT = 8080
+
 DIR_PATH = os.path.dirname(os.path.realpath(__file__))
 
 COMMONS = os.path.join(DIR_PATH, 'Commons')
